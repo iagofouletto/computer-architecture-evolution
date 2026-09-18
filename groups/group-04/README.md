@@ -4,7 +4,7 @@
 * 1 - Iago Henrico Paiva Fouletto
 * 2 - Iago Gabriel Bortuluzzi
 * 3 - Guilherme Simões de Souza
-* 4 - Gustavo Balsam
+* 4 - Gustavo Balsan Jurach
 
 ## Selected Architecture
 * Arquitetura **RISC-V**
@@ -13,7 +13,7 @@
 A arquitetura RISC-V é um conjunto de instruções (ISA) totalmente aberto e gratuito, projetado para servir como um padrão universal e flexível que atende desde microcontroladores simples até chips robustos de servidores e inteligência artificial.
 
 ## Historical Context
-* **Período/Ano:** Criada em 2010.
+* **Período/Ano:** Criada em 2010.  
 * **Fabricante ou Organização:** Desenvolvida na Universidade da Califórnia em Berkeley e mantida atualmente pela associação global sem fins lucrativos RISC-V International.
 * **Contexto de surgimento:** Surgiu para solucionar o custo excessivo e as restrições de arquiteturas fechadas (como ARM e x86), além de combater o acúmulo de instruções antigas e complexas em chips legados ao longo de décadas, apostando em modularidade.
 * **Importância histórica:** Democratizou o design de processadores ao eliminar a necessidade de pagamento de licenças ou patentes fechadas, permitindo que qualquer pessoa, universidade ou empresa crie sua própria tecnologia.
