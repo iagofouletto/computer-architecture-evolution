@@ -12,7 +12,7 @@ Os registradores estão diretamente associados ao núcleo do processador e apres
 
 Entretanto, nenhum desses níveis, sua quantidade ou sua capacidade é obrigatória na arquitetura RISC-V. A especificação permite diferentes organizações de memória, desde sistemas simples com pouca memória até processadores multicore com múltiplos níveis de cache.
 
-## 4.2 RAM
+## 4.2 RAM 
 
 A **RAM (Random Access Memory)** é utilizada para armazenar temporariamente programas e dados que estão sendo utilizados pelo sistema.
 
