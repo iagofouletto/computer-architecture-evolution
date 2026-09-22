@@ -28,15 +28,17 @@ GPIO (General Purpose Input/Output): Linhas de pinos programáveis de entrada e 
 ## 6.5 Examples
 Para ilustrar a comunicação de I/O em RISC-V, o exemplo mais comum é a transmissão de um caractere via porta serial UART 16550 mapeada em memória:
 
-# Exemplo conceitual: Envio de um caractere via UART MMIO
-# Endereço base da UART mapeado em 0x10000000
+    # Exemplo conceitual: Envio de um caractere via UART MMIO
+    # Endereço base da UART mapeado em 0x10000000
+    
     li   t0, 0x10000000       # Carrega o endereço base da UART
     li   t1, 0x41             # Caractere ASCII 'A'
-wait_tx_ready:
-    lb   t2, 5(t0)            # Lê o Line Status Register (LSR) no offset +5
-    andi t2, t2, 0x20         # Testa se o bit 5 (Transmitter Holding Empty) está ativo
-    beqz t2, wait_tx_ready    # Enquanto não estiver pronto, continua aguardando
-    sb   t1, 0(t0)            # Escreve o caractere 'A' no offset 0 (THR) -> transmite
+    
+    wait_tx_ready:
+        lb   t2, 5(t0)            # Lê o Line Status Register (LSR) no offset +5
+        andi t2, t2, 0x20         # Testa se o bit 5 (Transmitter Holding Empty) está ativo
+        beqz t2, wait_tx_ready    # Enquanto não estiver pronto, continua aguardando
+        sb   t1, 0(t0)            # Escreve o caractere 'A' no offset 0 (THR) -> transmite
     
 Neste modelo, polling de status e transmissão são feitos exclusivamente com instruções de carga e descarga (lb e sb), sem nenhum comando proprietário de I/O.
 
